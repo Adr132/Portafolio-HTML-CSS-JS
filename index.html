@@ -18,6 +18,41 @@
                 <li><a href="#Contact" >Contact</a></li>
             </ul>
         </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Adriana Jimenez Cordoba</div>
+        <div>
+            <div class="hamburger-menu"></div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience"onclick="toggleMenu()" >Experience</a></li>
+                <li><a href="#Projects"onclick="toggleMenu()" >Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+    </nav>
+    <section id="hero">
+    <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Profile picture"/>
+    </div>
+    <div class="section__text">
+        <p class="section__text_p1">Hello! I'am </p>
+        <h1 class="title"> Adriana Jimenez</h1>
+        <p class="section__text_p2">Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'"> 
+                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/'"> 
+        </div>
+    </div>
+    </section>
    <script src="script.js"></script>
 </body>
 </html>
