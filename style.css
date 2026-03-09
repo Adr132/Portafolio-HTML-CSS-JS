@@ -7,6 +7,7 @@
  }
  body {
     font-family:"Poppins", "sans-serif";
+    background-color: #f2f1ed;
  }
  html {
     scroll-behavior: smooth;
@@ -144,7 +145,7 @@ section {
     margin:auto 0;
 }
 #hero img {
-    border-radius: 60%;
+    border-radius: 50%;
 }
 .section__text {
     align-self: center;
@@ -219,7 +220,8 @@ section {
 
 /* ABOUT SECTION*/
 #About{ 
-    position: relative;
+
+ position: relative;
     }
 
 .about-containers {
@@ -227,16 +229,16 @@ section {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
+
 .about-containers,.about-details-container {
     display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
 }
-.about-pic {
-    border-radius: 2rem;
-}
+
 .arrow {
     position: absolute;
     right: -5rem;
@@ -255,11 +257,8 @@ section {
     gap: 4rem;
     height: 80%;
 }
-.section__pic-container{
-    height: 400px;
-    width: 400px;
-    margin:auto 0;
-}  
+
+
 /* EXPERIENCE SECTION*/
 #experience {
     position:relative;
