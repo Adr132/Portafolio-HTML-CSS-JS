@@ -354,3 +354,37 @@ footer {
 footer p{
     text-align: center;
 }
+
+/*CAROUSEL*/
+
+#carousel {
+    * {
+  box-sizing: border-box;
+}
+ul {
+  width: 70vw;
+  height: 300px;
+  padding: 10px;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  columns: 1;
+  text-align:center;
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+  height: 100%;
+  width: 200px;
+  background-color: #f5f5f5 ;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: left;
+}
+}
+ul::column {
+  scroll-snap-align: center;
+}
+
